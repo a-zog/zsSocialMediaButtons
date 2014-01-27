@@ -1,0 +1,66 @@
+.hero{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 10px;
+	height: auto;
+	background: #0077b1;
+}
+
+.hero h1 small{
+	color: #efefef;
+}
+
+.sm-showcase dd span{
+  font-size: 35px;
+}
+
+/*
+ * Callouts
+ *
+ * Not quite alerts, but custom and helpful notes for folks reading the docs.
+ * Requires a base and modifier class.
+ */
+
+ /* Common styles for all types */
+ .zs-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+.zs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.zs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+
+.zs-callout-info {
+  background-color: #CAD9F3;
+  border-color: #4d90fe;
+}
+.zs-callout-info h4 {
+  color: #4d90fe;
+}
+
+
+.love{
+	height: 20px;
+}
+#footer .zsocial li{
+  display: inline-block;
+  margin: 0;
+}
+#footer{
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#footer img{
+  height: 42px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}

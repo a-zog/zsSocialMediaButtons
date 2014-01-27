@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>zsSocialMediaButtons: Quick display of your social profiles</title>
+
+	<!-- zsGridSwitcher css -->
+  <link href="assets/css/documentation.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="assets/css/zssocial.min.css" rel="stylesheet" type="text/css" media="screen">
+
+  <link href="assets/css/zicon.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="assets/css/zicon-ie7.css" rel="stylesheet" type="text/css" media="screen">
+
+
+
+	<!-- Latest compiled and minified CSS served from BootStrap CDN -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+  <div class="hero">
+
+    <a class="btn btn-primary btn-lg pull-right" target="_blank" href="#">Fork on GitHub</a>
+    <h1>zsSocialMediaButtons <small>zssocial.js</small></h1>
+    <p class="lead">A CSS3 & lightweight JQuery component to quickly display your social profiles.</p>
+  </div>
+
+
+  <div class="container main-content">
+   <h2>Basic example</h2>
+   <p>Basic example is made so that you can use it without even calling the JavaScript source. Only the CSS file is required</p>
+   <ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#basic-example" data-toggle="tab">Example</a></li>
+    <li class=""><a href="#basic-code" data-toggle="tab">Code</a></li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="basic-example">
+
+     <div class="zs-example" style="padding-bottom: 24px;">
+       <h4>Flat design</h4>
+       <p>This is the default style used.</p>
+       <div class="zsocial">
+        <ul>
+          <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+        </ul>
+      </div>
+      <h4>Bubble design</h4>
+
+      <div class="zsocial bubble">
+        <ul>
+          <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+          <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+        </ul>
+      </div>                
+      <h4>Tech design</h4>
+      <div class="zsocial">
+        <ul>
+          <li><a href="#" target="_blank" class="color-twitter border-twitter"><span class="zicon-twitter"></span></a></li>
+          <li><a href="#" target="_blank" class="color-facebook border-facebook"><span class="zicon-facebook-2"></span></a></li>
+          <li><a href="#" target="_blank" class="color-gplus border-gplus"><span class="zicon-gplus"></span></a></li>
+          <li><a href="#" target="_blank" class="color-linkedin border-linkedin"><span class="zicon-linkedin"></span></a></li>
+          <li><a href="#" target="_blank" class="color-instagram border-instagram"><span class="zicon-instagram"></span></a></li>
+          <li><a href="#" target="_blank" class="color-wordpress border-wordpress"><span class="zicon-wordpress"></span></a></li>
+          <li><a href="#" target="_blank" class="color-soundcloud border-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="tab-pane fade" id="basic-code">
+    <pre style="background:#fff;color:#000"><span style="color:#00b418">&lt;!--Flat design --></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial"</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+      <span style="color:#00b418">&lt;!--Bubble design--></span>
+
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial bubble"</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>                
+      <span style="color:#00b418">&lt;!--Tech design--></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial"</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"color-... border-"</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+      <span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+    </pre>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Hover effects</h2>
+<p>You can choose a hover effect between those below (or you can leave the buttons without a particular effect).</p>
+
+
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active"><a href="#hover-example" data-toggle="tab">Example</a></li>
+  <li class=""><a href="#hover-code" data-toggle="tab">Code</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="hover-example">
+   
+<h4>WakeUp Effect</h4>
+<div class="zsocial wakeup">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+
+<h4>FocusOn Effect</h4>
+<div class="zsocial focuson">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+<h4>GrowUp Effect</h4>
+<div class="zsocial growup">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+
+
+  </div>
+  
+  <div class="tab-pane fade" id="hover-code">
+<div class="clearfix"></div>
+<pre style="background:#fff;color:#000"><span style="color:#00b418">&lt;!--WakeUp Effect --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial wakeup"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+
+<span style="color:#00b418">&lt;!--FocusOn Effect --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial focuson"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+
+<span style="color:#00b418">&lt;!--GrowUp Effect --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial growup"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+</pre>
+
+  </div>
+</div>
+
+
+<h2>Sizes available</h2>
+
+
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active"><a href="#sizes-example" data-toggle="tab">Example</a></li>
+  <li class=""><a href="#sizes-code" data-toggle="tab">Code</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="sizes-example">
+
+<h4>Small</h4>
+<div class="zsocial small">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+
+<h4>Default Size</h4>
+<div class="zsocial">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+<h4>Large</h4>
+<div class="zsocial large">
+  <ul>
+    <li><a href="#" target="_blank" class="bg-twitter"><span class="zicon-twitter"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-facebook"><span class="zicon-facebook-2"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-gplus"><span class="zicon-gplus"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-linkedin"><span class="zicon-linkedin"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-instagram"><span class="zicon-instagram"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-wordpress"><span class="zicon-wordpress"></span></a></li>
+    <li><a href="#" target="_blank" class="bg-soundcloud"><span class="zicon-soundcloud"></span></a></li>
+  </ul>
+</div>
+
+  </div>
+
+  <div class="tab-pane fade" id="sizes-code">
+
+<pre style="background:#fff;color:#000"><span style="color:#00b418">&lt;!--Small --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial small"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+
+<span style="color:#00b418">&lt;!--Default Size --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+<span style="color:#00b418">&lt;!--Large --></span>
+<span style="color:#1c02ff">&lt;<span style="font-weight:700">div</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"zsocial large"</span>></span>
+  <span style="color:#1c02ff">&lt;<span style="font-weight:700">ul</span>></span>
+    <span style="color:#1c02ff">&lt;<span style="font-weight:700">li</span>></span><span style="color:#1c02ff">&lt;<span style="font-weight:700">a</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"#"</span> <span style="font-style:italic">target</span>=<span style="color:#d80800">"_blank"</span> <span style="font-style:italic">class</span>=<span style="color:#d80800">"bg-..."</span>></span>Icon or Text..<span style="color:#1c02ff">&lt;/<span style="font-weight:700">a</span>></span><span style="color:#1c02ff">&lt;/<span style="font-weight:700">li</span>></span>
+  <span style="color:#1c02ff">&lt;/<span style="font-weight:700">ul</span>></span>
+<span style="color:#1c02ff">&lt;/<span style="font-weight:700">div</span>></span>
+
+</pre>
+  </div>
+</div>
+
+
+
+
+
+<h2>Variations</h2>
+
+
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active"><a href="#variations-icons" data-toggle="tab">Social Media Icons</a></li>
+  <li class=""><a href="#variations-colors" data-toggle="tab">Social Media Colors</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="variations-icons">
+<h3>Social Media Icons</h3>
+<p class="lead">These are the available social media icons.</p>
+<div class="row">
+<div class="col-md-6">
+  
+<dl class="dl-horizontal sm-showcase">
+  <dt>Twitter</dt>
+  <dd>
+    <span class="zicon-twitter-circled-2"></span>  
+    <span class="zicon-twitter-squared"></span> 
+    <span class="zicon-twitter"></span> 
+    <span class="zicon-twitter-5"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Facebook</dt>
+  <dd> 
+    <span class="zicon-facebook-circled-2"></span>  
+    <span class="zicon-facebook-2"></span> 
+  </dd>
+</dl>
+
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Vkontakte</dt>
+  <dd>
+    <span class="zicon-vkontakte-1"></span>
+    <span class="zicon-vkontakte"></span>
+    <span class="zicon-vk"></span>
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Google Plus</dt>
+  <dd>
+    <span class="zicon-gplus-circled"></span>  
+    <span class="zicon-gplus-squared"></span> 
+    <span class="zicon-gplus"></span> 
+    <span class="zicon-gplus-1"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Youtube</dt>
+  <dd>
+    <span class="zicon-youtube-squared"></span> 
+    <span class="zicon-youtube"></span> 
+    <span class="zicon-youtube-2"></span>  
+    <span class="zicon-youtube-play"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Wordpress</dt>
+  <dd>
+    <span class="zicon-wordpress-2"></span>  
+    <span class="zicon-wordpress"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Tumblr</dt>
+  <dd>
+    <span class="zicon-tumblr-circled"></span> 
+    <span class="zicon-tumblr-squared"></span> 
+    <span class="zicon-tumblr"></span>  
+    <span class="zicon-tumblr-1"></span>  
+    <span class="zicon-tumblr-2"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Vimeo</dt>
+  <dd>
+    <span class="zicon-vimeo-circled"></span> 
+    <span class="zicon-vimeo-squared"></span> 
+    <span class="zicon-vimeo-2"></span>  
+    <span class="zicon-vimeo-1"></span>  
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>SoundCloud</dt>
+  <dd>
+    <span class="zicon-soundcloud-circled"></span> 
+    <span class="zicon-soundcloud-1"></span>  
+    <span class="zicon-soundcloud"></span> 
+    <span class="zicon-soundcloud-2"></span>  
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Lastfm</dt>
+  <dd>
+    <span class="zicon-lastfm-circled"></span> 
+    <span class="zicon-lastfm-1"></span>  
+    <span class="zicon-lastfm"></span> 
+    <span class="zicon-lastfm-2"></span>  
+  </dd>
+</dl>
+</div>
+
+<div class="col-md-6">
+  
+
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>LinkedIn</dt>
+  <dd>
+    <span class="zicon-linkedin-circled-2"></span>  
+    <span class="zicon-linkedin-squared"></span>  
+    <span class="zicon-linkedin"></span> 
+    <span class="zicon-linkedin-2"></span>  
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Xing</dt>
+  <dd>
+    <span class="zicon-xing-squared"></span>
+    <span class="zicon-xing"></span>
+    <span class="zicon-xing-1"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Viadeo</dt>
+  <dd>
+    <span class="zicon-viadeo"></span>
+  </dd>
+</dl>
+
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Pinterest</dt>
+  <dd>
+    <span class="zicon-pinterest-circled"></span>
+    <span class="zicon-pinterest-circled-1"></span>
+    <span class="zicon-pinterest"></span>
+    <span class="zicon-pinterest-1"></span>
+
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Instagram</dt>
+  <dd>
+    <span class="zicon-instagram-circled"></span>
+    <span class="zicon-instagramm"></span>
+    <span class="zicon-instagram-2"></span>
+    <span class="zicon-instagram"></span>
+    <span class="zicon-instagram-1"></span>
+
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Flickr</dt>
+  <dd>
+    <span class="zicon-flickr-circled"></span>
+    <span class="zicon-flickr"></span>
+    <span class="zicon-flickr-2"></span>
+    <span class="zicon-flickr-3"></span>
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>DeviantArt</dt>
+  <dd>
+    <span class="zicon-deviantart-1"></span>
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Skype</dt>
+  <dd>
+
+    <span class="zicon-skype"></span>
+    <span class="zicon-skype-1"></span>
+    <span class="zicon-skype-2"></span>
+    <span class="zicon-skype-outline"></span>
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Github</dt>
+  <dd>
+    <span class="zicon-github-circled"></span>
+    <span class="zicon-github-squared"></span>
+    <span class="zicon-github-circled-4"></span>
+    <span class="zicon-github"></span>
+    <span class="zicon-github-1"></span>
+    <span class="zicon-github-circled-alt"></span>
+  </dd>
+</dl>
+</div>
+</div>
+
+
+  </div>
+
+  <div class="tab-pane fade" id="variations-colors">
+
+
+<h3>Social Media Colors</h3>
+<p>These are default colors for each social media.</p>
+<p>You can use them by adding <code>.color-SOCIALNAME</code> class into a text element.</p>
+<p>You can also apply <code>.bg-SOCIALNAME</code> (or <code>.border-SOCIALNAME</code>) classes into a container to change the background (or the border) according to the social media's color.</p>
+<div class="row">
+<div class="col-md-4">
+<dl class="dl-horizontal sm-showcase">
+
+  <dt>Twitter</dt>
+  <dd>
+      <span class="zicon-db-shape color-twitter"></span>
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Facebook</dt>
+  <dd>
+      <span class="zicon-db-shape color-facebook"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Vkontakte</dt>
+  <dd>
+      <span class="zicon-db-shape color-vk"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Google Plus</dt>
+  <dd>
+      <span class="zicon-db-shape color-gplus"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Youtube</dt>
+  <dd>
+      <span class="zicon-db-shape color-youtube"></span>
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Vimeo</dt>
+  <dd>
+      <span class="zicon-db-shape color-vimeo"></span>
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Skype</dt>
+  <dd>
+      <span class="zicon-db-shape color-skype"></span>
+  </dd>
+</dl>
+</div>
+
+<div class="col-md-4">
+<dl class="dl-horizontal sm-showcase">
+  <dt>LinkedIn</dt>
+  <dd>
+      <span class="zicon-db-shape color-linkedin"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Xing</dt>
+  <dd>
+      <span class="zicon-db-shape color-xing"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Viadeo</dt>
+  <dd>
+      <span class="zicon-db-shape color-viadeo"></span>
+  </dd>
+</dl>
+
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>SoundCloud</dt>
+  <dd>
+      <span class="zicon-db-shape color-soundcloud"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Lastfm</dt>
+  <dd>
+      <span class="zicon-db-shape color-lastfm"></span>
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Github</dt>
+  <dd>
+      <span class="zicon-db-shape color-github"></span>
+  </dd>
+</dl>
+
+</div>
+<div class="col-md-4">
+  
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Pinterest</dt>
+  <dd>
+      <span class="zicon-db-shape color-pinterest"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Instagram</dt>
+  <dd>
+      <span class="zicon-db-shape color-instagram"></span>
+  </dd>
+</dl>
+<dl class="dl-horizontal sm-showcase">
+  <dt>Flickr</dt>
+  <dd>
+      <span class="zicon-db-shape color-flickr"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>DeviantArt</dt>
+  <dd>
+      <span class="zicon-db-shape color-deviantart"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Wordpress</dt>
+  <dd>
+      <span class="zicon-db-shape color-wordpress"></span>
+  </dd>
+</dl>
+
+<dl class="dl-horizontal sm-showcase">
+  <dt>Tumblr</dt>
+  <dd>
+      <span class="zicon-db-shape color-tumblr"></span>
+  </dd>
+</dl>
+</div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="zs-callout zs-callout-info">
+  <h4>Image icon</h4>
+  <p>Don't worry about the image icons of the Grid Switcher, they are already base64 encoded inside the JavaScript file.</p>
+</div>
+
+<h3>Advanced use</h3>
+
+<p>Advanced configuration is avaible by adding additional data attributes to change Grid Switcher's defaults.</p>
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active"><a href="#adv-params" data-toggle="tab">Params</a></li>
+  <li class=""><a href="#adv-example" data-toggle="tab">Example</a></li>
+  <li class=""><a href="#adv-code" data-toggle="tab">Code</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="adv-params">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Data attribute</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>gs-display</code></td>
+          <td>Integer</td>
+          <td>"grid"</td>
+          <td>Change this attribute to modify the default view mode.</td>
+        </tr>
+        <tr>
+          <td><code>gs-position</code></td>
+          <td>String</td>
+          <td>"right"</td>
+          <td>Position of the view mode options (right or left).</td>
+        </tr>
+        <tr>
+          <td><code>gs-imgonly</code></td>
+          <td>Boolean</td>
+          <td>false</td>
+          <td>Change this attribute to show/hide text labels in the view mode options.</td>
+        </tr>
+        <tr>
+          <td><code>gs-zicon</code></td>
+          <td>Boolean</td>
+          <td>false</td>
+          <td>Activate Zicon font library mashup. It will actually use font-icons instead of those PNG images.</td>
+        </tr>
+        <tr>
+          <td><code>gs-list-icon</code></td>
+          <td>String</td>
+          <td>zicon-th-list-4</td>
+          <td>Zicon font icon class of list view.</td>
+        </tr>
+        <tr>
+          <td><code>gs-grid-icon</code></td>
+          <td>String</td>
+          <td>zicon-th-large-2</td>
+          <td>Zicon font icon class of grid view.</td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+  <div class="tab-pane fade" id="adv-example">
+
+
+
+</div>
+<div class="tab-pane fade" id="adv-code">
+
+
+ 
+
+</div>
+</div>
+
+
+<div id="footer">
+  <div class="container">
+
+
+    <div class="zsocial small focuson bubble pull-right " style="position absolute">
+      <ul>
+        <li><a class="bg-github" data-toggle="tooltip" target="_blank" data-original-title="Github" href="https://github.com/a-zog"><span aria-hidden="true" class="zicon-github-6"></span></a></li>
+        <li><a class="bg-linkedin" data-toggle="tooltip" target="_blank" data-original-title="LinkedIn" href="http://tn.linkedin.com/in/zoghlamiahmed"><span aria-hidden="true" class="zicon-linkedin"></span></a></li>
+        <li><a class="bg-twitter" data-toggle="tooltip" target="_blank" data-original-title="Twitter" href="https://twitter.com/a_zog"><span aria-hidden="true" class="zicon-twitter"></span></a></li>
+        <li><a class="bg-wordpress" data-toggle="tooltip" target="_blank" data-original-title="Wordpress" href="http://ahzog.wordpress.com/"><span aria-hidden="true" class="zicon-wordpress"></span></a></li>
+      </ul>
+    </div>
+    <p class="muted credit">zsGridSwitcher made with <span class="zicon-heart color-lastfm pulse"></span> by <a href="http://about.me/zoghlami.ahmed" target="_blank" data-original-title="" title="">Zoghlami Ahmed</a></p>
+  </div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<!-- zsGridSwitcher plugin -->
+<script src="assets/js/zssocial.js" type="text/javascript"></script>
+
+
+</body>
+</html>

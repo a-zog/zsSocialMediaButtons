@@ -1,6 +1,7 @@
 zsSocialMediaButtons
 =========================
 
+http://ahzog.com/socialmediabuttons/
 A CSS3 & lightweight JQuery to showcase Social Networks.
 
 Made using:
